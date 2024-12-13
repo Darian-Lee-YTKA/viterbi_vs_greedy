@@ -8,13 +8,17 @@ This repository compares the performance of the Viterbi algorithm with a greedy 
 
 You can experiment with different values of alpha to see how they affect performance. By default, alpha = 1 is the best-performing value. To test other values of alpha, uncomment the following line in the `main()` function:
 
+```python
 # run_experiments()
+```
 
 ### 2. Running the Greedy Search Model:
 
 To test the greedy search model on the test set, uncomment the following line in the `main()` function:
 
+```python
 # run_greedy()
+```
 
 This will run the greedy search method to predict the tags for the test set and display the evaluation results.
 
@@ -22,7 +26,9 @@ This will run the greedy search method to predict the tags for the test set and 
 
 To test the baseline model, which only uses emission probabilities (without transition probabilities), uncomment the following line in the `main()` function:
 
+```python
 # run_baseline()
+```
 
 This will run the baseline model, which is expected to perform worse compared to models that incorporate transition probabilities.
 
@@ -30,7 +36,9 @@ This will run the baseline model, which is expected to perform worse compared to
 
 The Viterbi algorithm is slower than the greedy search but provides more accurate results in terms of overall accuracy. To get the results for Viterbi, uncomment the following line:
 
+```python
 # run_test()
+```
 
 **Note**: Running this function takes a long time due to the complexity of the Viterbi algorithm.
 
@@ -40,10 +48,13 @@ Additionally, all predictions will be saved as a JSON file during this process.
 
 Once you have the Viterbi results in a JSON file, you can evaluate them in comparison to the test data by uncommenting the following line:
 
+```python
 # evaluate_viterbi_test()
+```
 
 This will load the JSON file, compare the predictions to the actual test data, and output the evaluation metrics.
 
+## NOTE: you will also be required to change all filepaths to those on your local computer
 ---
 
 ## Model Evaluation Metrics:
